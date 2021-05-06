@@ -1,24 +1,47 @@
-.App{
+.App {
   background: #f2f2f2;
 }
 
-.categories-wrap div{
-min-width: 40vw;
-background-color: #fff;
-margin: 2rem;
-height: 20vh;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 10px;
-cursor: pointer;
+.categories-wrap div {
+  min-width: 40vw;
+  background-color: #fff;
+  margin: 2rem;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.categories-wrap div:hover{
+.categories-wrap div:hover {
   transform: scale(1.05);
-
 }
-.categories-wrap{
- display: flex;
- justify-content: center;
+.categories-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.myplayer {
+  border-radius: 25px;
+  margin: 5rem;
+  overflow: hidden;
+}
+
+.player-listing {
+  margin: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  background: blue;
+}
+.listing-wrap {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width:90vw;
+  flex-wrap: wrap;
+  background-color: red;
+}
+.videcard {
+  padding: 1.5rem;
 }

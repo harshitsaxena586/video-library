@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Category from './pages/Category';
 import Playlists from './pages/Playlists';
+import Videoplayer from './pages/Videoplayer';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
   <Navbar />
    <Routes>
     <Route path="/" element={<Home />}/>
-    <Route path="category" element={<Category />}/>
+    <Route path="/:filter" element={<Category />}/>
+    <Route path="/:filter/:vid" element={<Videoplayer />}/>
     <Route path="playlists" element={<Playlists />}/>
     </Routes>
     </div>
