@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Category from './pages/Category';
 import Playlists from './pages/Playlists';
 import Videoplayer from './pages/Videoplayer';
+import History from './pages/History';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
   <Navbar />
    <Routes>
     <Route path="/" element={<Home />}/>
+
+    <Route path="/history" element={<History />}/>
     <Route path="/:filter" element={<Category />}/>
     <Route path="/:filter/:vid" element={<Videoplayer />}/>
     <Route path="playlists" element={<Playlists />}/>

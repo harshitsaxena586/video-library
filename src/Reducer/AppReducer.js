@@ -1,8 +1,12 @@
 import React from 'react'
 
-export default function reducer(action,state) {
+export default function reducer(state,action) {
     switch(action.type){
-       case "test":
-        return {...state,liked:["test succesfull"]} 
+     case "ADDTOWATCHLATER":
+     return {...state,watchlater:state.watchlater.concat(action.payload)} 
+     case "LIKED":
+     return {...state,liked:state.liked.concat(action.payload)};
+     case "ADDHISTORY":
+     return {...state,history:state.history.concat(action.payload)}
     }
 }

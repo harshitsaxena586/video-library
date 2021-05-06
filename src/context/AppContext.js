@@ -10,7 +10,6 @@ const initialState={
 }
 
 export function AppContextProvider({ children }) {
-
   const [state,dispatch]=useReducer(reducer,initialState)
   
   return (

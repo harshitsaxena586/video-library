@@ -12,7 +12,6 @@ export default function Category() {
       <h1 className="text-center">{filter}</h1>
       <div className="listing-wrap">
         {filteredArr.map(item=><Videocard item={item} />)}
-      
       </div>
     </div>
   );

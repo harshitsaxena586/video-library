@@ -1,9 +1,21 @@
 import React from 'react'
+import Playlistcard from '../components/Playlistcard'
+import { useApp } from '../context/AppContext'
 
 export default function Playlists() {
+    const {state,dispatch}=useApp()
+    const { watchlater,liked} =state
+console.log(watchlater,liked)
     return (
-        <div>
-            <h1>Playlist</h1>
+        <div className="playlist-wrap">
+            <h1 className="text-center">Watch Later</h1>
+            <ul class="list-tag">
+            {watchlater.map(item=> <Playlistcard item={item} />)}
+            </ul>
+            <h1 className="text-center">Liked</h1>
+            <ul class="list-tag">
+            {watchlater.map(item=> <Playlistcard item={item} />)}
+            </ul>
         </div>
     )
 }

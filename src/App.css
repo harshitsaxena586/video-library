@@ -32,16 +32,35 @@
   margin: 1rem;
   border-radius: 10px;
   overflow: hidden;
-  background: blue;
-}
+ }
 .listing-wrap {
   margin: auto;
   display: flex;
   justify-content: center;
   width:90vw;
   flex-wrap: wrap;
-  background-color: red;
 }
 .videcard {
   padding: 1.5rem;
+}
+
+.video-player{
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.video-l {
+  overflow: hidden;
+  border-radius: 10px;
+  justify-self: center;
+margin: auto
+}
+
+.player-content{
+  margin:1rem auto;
+  width: 1200px;
+}
+p{
+  font-size: 18px;
+  font-family: "nunito",;
 }

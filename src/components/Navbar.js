@@ -17,7 +17,7 @@ export default function Navbar() {
         </li>
         <li>
           {" "}
-          <Link to="category">Category </Link>
+          <Link to="history">History</Link>
         </li>
         <li className="">
           {" "}
