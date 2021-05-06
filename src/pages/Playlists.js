@@ -14,7 +14,8 @@ console.log(watchlater,liked)
             </ul>
             <h1 className="text-center">Liked</h1>
             <ul class="list-tag">
-            {watchlater.map(item=> <Playlistcard item={item} />)}
+                
+            {liked.map(item=> <Playlistcard item={item} />)}
             </ul>
         </div>
     )
