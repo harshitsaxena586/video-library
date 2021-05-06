@@ -80,4 +80,21 @@ export const videoDB=[{
   url:"https://youtu.be/fSO0TmGZLB8",
   channel:"",
   category:"reviews"
+}
+,
+{
+  id:11,
+  title:"We Overclocked an AMD CPU to over 8.1 GHz !!",
+  desicription:"Elmor EV https://bit.ly/356T4IN​ ---------------------------------------------------------   Support me on Patreon   https://www.patreon.com/der8auer",
+  url:"https://youtu.be/rdLJu9AQOng",
+  channel:"der8auer",
+  category:"overclocking"
+},
+{
+  id:12,
+  title:"Overclocking to 7GHz with Liquid Nitrogen | Hands-On ",
+  desicription:"Read more: https://www.engadget.com/2017/06/04/g...",
+  url:"https://youtu.be/WwJvHJ1hyto",
+  channel:"Engadget",
+  category:"overclocking"
 }]
