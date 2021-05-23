@@ -1,12 +1,22 @@
-import React from "react";
+import React,{ useEffect,useState} from "react";
 import {useParams } from "react-router-dom";
-import { videoDB } from "../videoDB";
 import Videocard from "../components/Videocard";
+import axios from 'axios';
+
 export default function Category() {
+  const [videoDB,setVideoDB]=useState([])
+  useEffect(() =>{
+    axios.get('https://jainwin-video-backend.herokuapp.com/videos')
+    .then(function (response) {
+      setVideoDB(response.data.videos)
+    })
+    .catch(function (error) {
+      console.log(error);
+    })
+
+  },[])
   const { filter } = useParams();
-  console.log(filter)
-  const filteredArr=videoDB.filter(item=> item.category==filter)
-  console.log(filteredArr)
+  const filteredArr=videoDB.filter(item=> item.category===filter)
   return (
     <div>
       <h1 className="text-center">{filter}</h1>
