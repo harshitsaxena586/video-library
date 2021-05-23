@@ -1,14 +1,12 @@
 import React, { useEffect } from 'react'
 import {useParams } from "react-router-dom";
-import { videoDB } from '../videoDB';
 import ReactPlayer from 'react-player'
 import { useApp } from '../context/AppContext';
 
 export default function Videoplayer() {
 const  {vid}=useParams()
 const {state,dispatch}=useApp()
-console.log(state)
-const currentVideo=videoDB.find(item=> item.id==vid)
+const currentVideo=state.videoDB.find(item=> item.id==vid)
 useEffect(()=>dispatch({type:"ADDHISTORY",payload:currentVideo}),[])
 console.log(currentVideo)
     return (

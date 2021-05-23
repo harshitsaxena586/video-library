@@ -8,5 +8,8 @@ export default function reducer(state,action) {
      return {...state,liked:state.liked.concat(action.payload)};
      case "ADDHISTORY":
      return {...state,history:state.history.concat(action.payload)}
+     case "INITALIZE-VIDEO-DB":
+        return {...state,videoDB:(action.payload)}
+     default :return state
     }
 }

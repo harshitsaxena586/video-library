@@ -6,7 +6,8 @@ const AppContext = createContext();
 const initialState={
     history:[],
     watchlater:[],
-    liked:[]
+    liked:[],
+    videoDB:[]
 }
 
 export function AppContextProvider({ children }) {

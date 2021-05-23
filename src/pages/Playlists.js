@@ -5,7 +5,6 @@ import { useApp } from '../context/AppContext'
 export default function Playlists() {
     const {state,dispatch}=useApp()
     const { watchlater,liked} =state
-console.log(watchlater,liked)
     return (
         <div className="playlist-wrap">
             <h1 className="text-center">Watch Later</h1>
