@@ -1,0 +1,71 @@
+.App {
+  background: #f2f2f2; 
+}
+.categories-wrap div {
+  min-width: 40vw;
+  background-color: #fff;
+  margin: 2rem;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.categories-wrap div:hover {
+  transform: scale(1.05);
+}
+.categories-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.myplayer {
+  border-radius: 25px;
+  margin: 5rem;
+  overflow: hidden;
+}
+
+.player-listing {
+  margin: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.listing-wrap {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+  flex-wrap: wrap;
+}
+.video-card {
+  padding: 1rem 1.5rem;
+  margin: 1.5rem;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+a:any-link {
+  color: #2563eb;
+}
+.video-player button {
+  margin: 0.5rem 1rem;
+}
+
+.video-l {
+  overflow: hidden;
+  border-radius: 10px;
+  justify-self: center;
+  margin: auto;
+}
+
+.player-content {
+  margin: 1rem auto;
+  width: 1200px;
+  display: flex;
+}
+p {
+  font-size: 18px;
+  font-family: "nunito", "sans-serrif";
+}
