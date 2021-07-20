@@ -1,25 +1,28 @@
-import  { createContext, useContext, useReducer } from "react";
-import  reducer  from "../Reducer/AppReducer";
+import { createContext, useContext, useReducer } from "react";
+import reducer from "../reducer/appReducer";
 
 const AppContext = createContext();
 
-const initialState={
-    history:[],
-    watchlater:[],
-    liked:[],
-    videoDB:[]
-}
+const token = localStorage.getItem("token");
+const initialState = {
+  history: [],
+  watchlater: [],
+  liked: [],
+  videoDB: [],
+  playlists: [],
+  authToken: token,
+};
 
 export function AppContextProvider({ children }) {
-  const [state,dispatch]=useReducer(reducer,initialState)
-  
+  const [state, dispatch] = useReducer(reducer, initialState);
+
   return (
-    <AppContext.Provider value={{state,dispatch}}>
+    <AppContext.Provider value={{ state, dispatch }}>
       {children}
     </AppContext.Provider>
   );
 }
 
 export function useApp() {
- return useContext(AppContext);
+  return useContext(AppContext);
 }
